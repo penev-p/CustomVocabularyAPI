@@ -1,3 +1,4 @@
+using AutoMapper;
 using CustomVocabulary.Core;
 using CustomVocabulary.Core.Services;
 using CustomVocabulary.Data;
@@ -35,6 +36,8 @@ namespace CustomVocabulary.API
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            services.AddAutoMapper(typeof(Startup));
         }
 
         
