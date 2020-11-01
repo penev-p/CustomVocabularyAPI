@@ -4,8 +4,10 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Core.Services
 {
-    //Services are going to link our API with the Data
-    //This service interfaces purpose is to handle Model logic(Vocabulary)
+    /// <summary>
+    /// Services are going to link our API with the Data. 
+    /// This service interfaces purpose is to handle Model logic (Vocabulary)
+    /// </summary>
     public interface IVocabularyService
     {
         Task<IEnumerable<Vocabulary>> GetAllVocabularies();

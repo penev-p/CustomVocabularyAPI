@@ -3,8 +3,10 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Core.Services
 {
-    //Services are going to link our API with the Data
-    //This service interfaces purpose is to handle Model(Word) logic
+    /// <summary>
+    /// Services are going to link our API with the Data.
+    /// This service interfaces purpose is to handle Model logic (Word)
+    /// </summary>
     public interface IWordService
     {
         //Task<IEnumerable<Word>> GetAllWords();

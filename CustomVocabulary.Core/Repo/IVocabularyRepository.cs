@@ -4,7 +4,9 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Core.Repo
 {
-    //Repository interface for specific model database operations
+    /// <summary>
+    /// Repository interface for specific model (Vocabulary) database operations
+    /// </summary>
     public interface IVocabularyRepository : IRepository<Vocabulary>
     {
         //Task<IEnumerable<Vocabulary>> GetAllVocabulariesAsync();

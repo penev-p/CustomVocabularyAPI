@@ -5,6 +5,9 @@ namespace CustomVocabulary.Core.Models
 {
     public class Vocabulary
     {
+        /// <summary>
+        /// Creates collection of Words for every new Vocabulary
+        /// </summary>
         public Vocabulary()
         {
             Words = new Collection<Word>();

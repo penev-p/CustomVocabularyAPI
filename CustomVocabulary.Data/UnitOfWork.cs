@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Data
 {
-    //Implementing UoW interface to wrap all repositories in one place
+    /// <summary>
+    /// Implementation of UnitOfWork interface to wrap all repositories in one place.
+    /// </summary>
     public class UnitOfWork : IUnitOfWork
     {
         private readonly CustomVocabularyDbContext _context;

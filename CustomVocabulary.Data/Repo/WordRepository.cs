@@ -22,7 +22,7 @@ namespace CustomVocabulary.Data.Repo
         //}
 
 
-        //This method is temorary
+        //This method is temorary for Postman API testing
         //cause probably there will be no need to get all the words in one place
         public async Task<IEnumerable<Word>> GetAllWordsAsync()
         {

@@ -4,7 +4,9 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Core
 {
-    //Unit of work will keep track of the list of changes during transaction and commiting
+    /// <summary>
+    /// Unit of work will keep track of the list of changes during transaction and commiting
+    /// </summary>
     public interface IUnitOfWork : IDisposable
     {
         IVocabularyRepository Vocabularies { get; }

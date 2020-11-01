@@ -4,8 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CustomVocabulary.Data.Configurations
 {
-    //This method defines models behavior, 
-    //it's constraints and relations with our second model 
+    /// <summary>
+    /// This class defines models behavior (Word), it's constraints and relations with our second model (Vocabulary) 
+    /// </summary>
     public class WordConfiguration : IEntityTypeConfiguration<Word>
     {
         public void Configure(EntityTypeBuilder<Word> builder)

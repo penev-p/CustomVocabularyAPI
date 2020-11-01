@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Services
 {
-    //Services are the business logic of the whole app
-    //Controllers will use Services to reach our Data
-    //Services are using Unit of Work, so we don't need to add DbContext directly
+    /// <summary>
+    /// Business logic of the whole app. Controllers -> Services -> UnitOfWork -> DbContext, Repositories
+    /// </summary>
     public class WordService : IWordService
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -3,7 +3,9 @@ using System.Threading.Tasks;
 
 namespace CustomVocabulary.Core.Repo
 {
-    //Base repository interface with general database operations
+    /// <summary>
+    /// Base repository interface with general database operations
+    /// </summary>
     public interface IRepository<TEntity> where TEntity : class
     {
         Task<IEnumerable<TEntity>> GetAllAsync();
